@@ -4,18 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "budo index.js --dir . --live -- -t babelify"
+    "start": "budo index.js --dir . --live -- -t babelify",
+    "build": "webpack index.js dist/index.js && cp index.html dist && cp styles.css dist && cp -r panos dist && cp -r img dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-plugin-lodash": "^3.2.11",
     "babel-preset-env": "^1.5.1",
     "babelify": "^7.3.0",
     "budo": "^10.0.3",
     "orbit-controls": "^1.1.2",
     "three": "^0.84.0",
-    "three-orbit-controls": "^82.1.0"
+    "three-orbit-controls": "^82.1.0",
+    "webpack": "^2.6.1"
   },
   "dependencies": {
     "lodash": "^4.17.4"
