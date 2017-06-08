@@ -35,9 +35,12 @@ class World {
   }
 
   navigateToScene(panoName) {
-    this.pano.links.forEach((arrow) => this.scene.remove(arrow.mesh));
+    this.pano.links.forEach((arrow) => {
+      if(arrow == null) return;
+      this.scene.remove(arrow.mesh);
+    });
     this.pano.loadTexture(panoName, this.defaultTime).then(this.render.bind(this));
-    this.pano.loadLinks();
+    this.pano.loadLinks().then(this.render.bind(this));
     this.panoName = panoName;
     this.material.map = this.pano.texture;
     this.material.map.needsUpdate = true;

@@ -14,6 +14,7 @@ class Pano {
     this.time = time;
     this.textureLoaded = false;
 
+    console.log(this.name, this.time);
     if(this.name === 'ensuite' && this.time < 4) {
       this.name = 'study';
     }
@@ -37,6 +38,7 @@ class Pano {
   loadLinks() {
     this.linkPromises = [];
     this.links = panoramaLinks[this.name].map((link) => {
+      if(link.pano == 'bathroom' && this.time > 0) return null;
       const arrow = new Arrow(link);
       this.scene.add(arrow.mesh);
       this.linkPromises.push(arrow.loadedPromise);

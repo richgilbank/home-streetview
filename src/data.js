@@ -10,6 +10,7 @@ const panoramas = {
     3: 22,
     4: -15,
     5: 3,
+    6: 0,
   },
   dining: {
     0: 15,
@@ -18,6 +19,7 @@ const panoramas = {
     3: -16,
     4: -10,
     5: -8,
+    6: 16,
   },
   ensuite: {
     4: 16,
@@ -30,6 +32,7 @@ const panoramas = {
     2: 13,
     4: 13,
     5: 13,
+    6: 14,
   },
   garage: {
     0: 95,
@@ -38,6 +41,7 @@ const panoramas = {
     0: 88,
     4: -10,
     5: -14,
+    6: -12,
   },
   living: {
     0: 0,
@@ -46,6 +50,7 @@ const panoramas = {
     3: 6,
     4: -8,
     5: -6,
+    6: 14,
   },
   master: {
     0: 17,
@@ -54,6 +59,7 @@ const panoramas = {
     3: 13,
     4: -15,
     5: 29,
+    6: 14,
   },
   study: {
     0: 88,
@@ -65,6 +71,7 @@ const panoramas = {
   upstairs: {
     0: 330,
     4: 9,
+    6: -13,
   },
   yard: {
     0: 0,
@@ -154,7 +161,7 @@ const panoramaLinks = {
     pano: 'study',
   }, {
     heading: 60,
-    pano: 'bath',
+    pano: 'bathroom',
   }, {
     heading: 0,
     pano: 'bedroom',
