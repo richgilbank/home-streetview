@@ -2,6 +2,8 @@ const panoramas = {
   basement: {
     0: 288,
     7: 15,
+    8: 14,
+    9: 13,
   },
   bathroom: {
     0: 15,
@@ -29,6 +31,7 @@ const panoramas = {
     5: 14,
     6: 34,
     7: 6,
+    8: 0,
   },
   entry: {
     0: 85,
@@ -68,6 +71,7 @@ const panoramas = {
     5: 29,
     6: 14,
     7: 20,
+    8: 12,
   },
   study: {
     0: 88,
