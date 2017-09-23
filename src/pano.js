@@ -18,8 +18,9 @@ class Pano {
       this.name = 'study';
     }
     else if(panoramas[this.name][this.time] == undefined) {
-      const validTimes = Object.keys(panoramas[name]).sort().reverse();
-      this.time = validTimes.find((compare) => parseInt(compare, 10) < parseInt(this.time));
+      const validTimes = Object.keys(panoramas[name]).map((time) => parseInt(time, 10));
+      const sortedTimes = validTimes.sort((a, b) => a - b).reverse();
+      this.time = sortedTimes.find((compare) => parseInt(compare, 10) < parseInt(this.time));
     }
     this.texturePath = `panos/${this.name}-${this.time}.jpg`;
 

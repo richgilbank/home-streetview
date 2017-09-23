@@ -5,6 +5,7 @@ const panoramas = {
     8: 14,
     9: 13,
     10: 14,
+    11: 14,
   },
   bathroom: {
     0: 15,
