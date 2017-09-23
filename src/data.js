@@ -26,6 +26,7 @@ const panoramas = {
     5: -8,
     6: 16,
     7: 12,
+    11: 15,
   },
   ensuite: {
     4: 16,
@@ -42,9 +43,11 @@ const panoramas = {
     5: 13,
     6: 14,
     7: 15,
+    11: 15,
   },
   garage: {
     0: 95,
+    11: -15,
   },
   kitchen: {
     0: 88,
@@ -52,6 +55,7 @@ const panoramas = {
     5: -14,
     6: -12,
     7: 17,
+    11: 17,
   },
   living: {
     0: 0,
@@ -62,6 +66,7 @@ const panoramas = {
     5: -6,
     6: 14,
     7: 13,
+    11: 13,
   },
   master: {
     0: 17,
@@ -91,6 +96,7 @@ const panoramas = {
   yard: {
     0: 0,
     7: 17,
+    11: -15,
   },
 };
 
